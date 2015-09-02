@@ -22,5 +22,10 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit common CM phone.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := trltexx
 PRODUCT_NAME := cm_trltexx
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_DEVICE="trltexx" \
+    PRODUCT_NAME="trltexx" \
+    BUILD_FINGERPRINT="samsung/trltexx/trltexx:5.0.2/LRX22G/N910TUVU1ANIH:user/release-keys" \
+    PRIVATE_BUILD_DESC="trltexx-user 5.0.2 LRX22G N910TUVU1ANIH release-keys"
