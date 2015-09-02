@@ -22,5 +22,10 @@ $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 # Inherit common slim phone.
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := trltexx
 PRODUCT_NAME := slim_trltexx
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_DEVICE="trltexx" \
+    PRODUCT_NAME="trltexx" \
+    BUILD_FINGERPRINT="samsung/trltexx/trltexx:5.0.2/LRX22G/N910TUVU1ANIH:user/release-keys" \
+    PRIVATE_BUILD_DESC="trltexx-user 5.0.2 LRX22G N910TUVU1ANIH release-keys"
